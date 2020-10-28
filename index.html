@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div id="main">
+
+        <h1 id="title">Survey Form</h1>
+        <!-- <p id="description">Please fill out the form to become our member</p> -->
+        <form id="survey-form">
+            <label class="label">
+                Name:
+            </label>
+            <input required class="input" type="text" id="name">
+            <label class="label">
+                Email:
+            </label>
+            <input type="email" class="input" id="email">
+            <label class="label">
+                Age:
+            </label>
+            <input type="number" class="input" id="age">
+            <label class="label">
+                Your designation:
+            </label>
+            <select class="input">
+                <option disabled selected>Select the option</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <label class="label">Do you like this work?</label>
+            <div class="input-container">
+                <input type="radio" id="yes" class="input-radio" value="yes" name="like">Yes
+            </div>
+            <div class="input-container">
+            <input type="radio" id="no" value="no" class="input-radio" name="like">No
+            </div>
+            <label class="label">What are the skills you have ?</label>
+            <div class="input-container">
+                <input class="input-radio" type="checkbox" id="check" value="frontend">Front-end
+            </div>
+            <div class="input-container">
+                <input type="checkbox" class="input-radio" id="check" value="backend">Back-end
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="check" class="input-radio" value="flexdesigning">Flex designing
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="check" class="input-radio" value="webdesigning">Web designing
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="check" class="input-radio" value="photo editing">Photo editing
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="check" class="input-radio" value="videoediting">Video editing
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="check" class="input-radio" value="Digital drawing">Digital drawing
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="check" class="input-radio" value="pencilsketching">Pencil sketching
+            </div>
+            <label class="label">Any comment or suggestions</label>
+            <textarea class="input" id="commentsection"></textarea>
+            <input type="button" id="button" value="Submit">
+        </form>
+        
+</div>
+</body>
+</html>
